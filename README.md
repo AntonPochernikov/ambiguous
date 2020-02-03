@@ -1,2 +1,2 @@
-# ambiguous
+# Ambiguous
 Nondeterminictic computation in JavaScript
