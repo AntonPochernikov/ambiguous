@@ -5,7 +5,7 @@ As the result we will obtain all possible solutions of current problem.
 ***
 
 ### Example
-**Simple logic puzzle:**  
+Simple logic puzzle:  
 _Baker, Cooper, Fletcher, Miller, and Smith live on different
 floors of an apartment house that contains only five
 floors. Baker does not live on the top floor. Cooper does
@@ -16,7 +16,7 @@ to Fletcher’s. Fletcher does not live on a floor adjacent
 to Cooper’s. Where does everyone live?_
 
 
-First of all we need create a task:
+**First of all we need create a task:**
 ```javascript 
 import { solve, amb, required } from 'amb';
 
@@ -53,7 +53,7 @@ function areDistinct([first, ...rest]) {
 };
 ```
 
-Simply get all solutions:
+**Simply get all solutions:**
 ```javascript 
 solve(problem);
 // => [{ baker: 3, cooper: 2, fletcher: 4, miller: 5, smith: 1 }];
