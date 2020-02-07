@@ -5,7 +5,7 @@ As the result we will obtain all possible solutions of current problem.
 ***
 
 ### Example
-~Simple logic puzzle:~  
+*Simple logic puzzle:*  
 Baker, Cooper, Fletcher, Miller, and Smith live on different
 floors of an apartment house that contains only five
 floors. Baker does not live on the top floor. Cooper does
