@@ -15,7 +15,7 @@ to Fletcher’s. Fletcher does not live on a floor adjacent
 to Cooper’s. Where does everyone live?_
 
 
-**First of all we need create a task:**
+**First of all we need to create a task:**
 ```javascript 
 import { solve, amb, required } from 'amb';
 
