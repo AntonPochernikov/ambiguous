@@ -23,7 +23,7 @@ import { solve, amb, required } from 'amb';
 const floors = [1, 2, 3, 4, 5];
 
 function* problem() {
-  // look how we yield ambiguous value as we are assigning all possible values to every person
+  // look how we yield ambiguous value as if we are assigning all possible values to every person
   const baker = yield amb(...floors);
   const cooper = yield amb(...floors);
   const fletcher = yield amb(...floors);
