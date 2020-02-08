@@ -1,4 +1,19 @@
 {
+  "name": "ambiguous",
+  "version": "1.0.0",
+  "description": "Nondeterminictic computation in JavaScript",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntonPochernikov/ambiguous.git"
+  },
+  "keywords": [],
+  "author": "Anton Pochernikov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AntonPochernikov/ambiguous/issues"
+  },
+  "homepage": "https://github.com/AntonPochernikov/ambiguous",
   "scripts": {
     "test": "jest --watchAll",
     "build": "webpack"
