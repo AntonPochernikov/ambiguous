@@ -1,12 +1,24 @@
-import { AMB_SYMBOL } from './constants';
+class Amb {
+  constructor(values) {
+    this.values = values;
 
-export const amb = (...values) => {
-  return {
-    values,
-    [AMB_SYMBOL]: true,
-  };
-};
+    this.generator = function* iterator() {
+      for (const value of this.values) { // eslint-disable-line no-restricted-syntax
+        yield value;
+      }
+    };
+    this[Symbol.iterator] = this.generator;
+  }
 
-export const isAmb = exp => typeof exp === 'object' && exp[AMB_SYMBOL];
+  toArray() {
+    return [...this.values];
+  }
 
-export const ambValues = amb => amb.values;
+  toGenerator() {
+    return this.generator();
+  }
+}
+
+export const amb = (values) => new Amb(values);
+
+export const isAmb = (exp) => exp instanceof Amb;

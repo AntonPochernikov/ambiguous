@@ -1,4 +1,4 @@
-function* THE_GENERATOR() {}
+function* THE_GENERATOR() {} // eslint-disable-line no-empty-function
 
 export const isGenerator = (value) => {
   if (typeof value !== 'function') {
