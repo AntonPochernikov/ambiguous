@@ -55,7 +55,6 @@ export default function solve(generator, ...argmnts) {
         }
 
         const success = backTrack();
-
         if (!success) {
           return;
         }
@@ -70,7 +69,6 @@ export default function solve(generator, ...argmnts) {
           }
 
           const success = backTrack();
-
           if (!success) {
             return;
           }
@@ -89,7 +87,6 @@ export default function solve(generator, ...argmnts) {
 
         if (ambDone) {
           const success = backTrack();
-
           if (!success) {
             return;
           }
