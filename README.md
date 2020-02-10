@@ -1,6 +1,6 @@
 # Nondeterminictic computation in JavaScript
 This small library provides us with tools to describe problems that contain ambiguous values and requirements.  
-As the result we can obtain all possible solutions of current problem.
+As the result we can obtain all possible solutions for current problem.
 
 ***
 
